@@ -30,6 +30,22 @@ function updateSydneyTime() {
 updateSydneyTime();
 setInterval(updateSydneyTime, 1000);
 
+function updateSingaporeTime() {
+  let singaporeElement = document.querySelector("#singapore");
+  if (singaporeElement) {
+    let singaporeDateElement = singaporeElement.querySelector(".date");
+    let singaporeTimeElement = singaporeElement.querySelector(".time");
+    let singaporeTime = moment().tz("Asia/Singapore");
+
+    singaporeDateElement.innerHTML = singaporeTime.format("MMMM Do YYYY");
+
+    singaporeTimeElement.innerHTML = `${singaporeTime.format("h:mm:ss")}
+<small>${singaporeTime.format("A")}<small>`;
+  }
+}
+updateSingaporeTime();
+setInterval(updateSingaporeTime, 1000);
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {

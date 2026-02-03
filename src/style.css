@@ -3,7 +3,8 @@ footer {
   color: rgb(49, 102, 147);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 h1 {
   color: rgb(72, 154, 226);
@@ -48,6 +49,7 @@ select {
   border-radius: 4px;
   margin: 20px 0;
   font-size: 18px;
+  color: rgba(0, 0, 0, 0.577);
 }
 
 .time {

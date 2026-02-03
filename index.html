@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
-    <title>World Time</title>
+    <title>World Time 🌎 </title>
   </head>
   <body>
     <div class="container">
-      <h1>WORLD TIME</h1>
+      <h1>🌏 WORLD TIME 🌎</h1>
 
       <select id="city">
         <option value="">Choose a city...</option>
@@ -19,6 +19,13 @@
         <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
         <option value="America/Los_Angeles">Los Angeles🇺🇸</option>
         <option value="Australia/Sydney">Sydney 🇦🇺</option>
+        <option value="Asia/Hong_Kong">Hong Kong 🇭🇰</option>
+          <option value="Asia/Singapore">Singapore 🇸🇬 </option>
+           <option value="Europe/Dublin">Ireland 🇮🇪</option>
+            <option value="Europe/Moscow">Moscow 🇷🇺 </option>
+             <option value="Europe/Rome">Italy 🇮🇹 </option>
+              <option value="Europe/Stockholm"> Stockholm 🇸🇪 </option>
+
         
       </select>
 <div id = "cities">
@@ -27,9 +34,19 @@
             <h2>Los Angeles 🇺🇸</h2>
             <div class="date"></div>
           </div>
-
           <div class="time"></div>
         </div>
+
+
+        <div class="city" id="singapore">
+          <div>
+            <h2>Singapore 🇸🇬</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+
         <div class="city" id="sydney">
           <div>
             <h2>Sydney 🇦🇺</h2>
@@ -37,13 +54,15 @@
           </div>
           <div class="time"></div>
         </div>
+
+
       </div>
     </div>
     </div>
   </body>
 
   <footer>
-    This project was coded by <strong> Jessie Cain </strong>,is open sourced
+    This project was coded by <strong> Jessie Cain, </strong>is open sourced
     <a href="https://github.com/jmcain" target="blank" id="link"> on Github</a>
     and hosted
     <a
